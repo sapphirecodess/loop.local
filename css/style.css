@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "montserratregular", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+  color: inherit;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.delivery{
+    background: #212121;
+    color: white;
+}
+
+.delivery .container{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.delivery__tittle{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 23px;
+}
+
+.delivery__tittle span{
+    font-weight: normal;
+}
+
+.delivery__text{
+    font-size: 21px;
+    font-family: 'montserratlight';
+}
+
+.man-woman .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.man,
+.woman{
+    width: 50%;
+    padding-top: 60px;
+    padding-bottom: 58px;
+
+}
+
+.man{
+    background: url(../img/man.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.woman{
+    background: url(../img/woman.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding-left: 35px; 
+}
+
+.man-woman{
+    background: linear-gradient(90deg, #F9F6F1 0%, #F9F6F1 50%, #F9E0E0 50%, #F9E0E0 100%);
+}
+
+.man-woman__tittle{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.man-woman__tittle span{
+    font-weight: normal;
+}
+
+.man-woman__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D7B399;
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+}
+
+.man-woman__link:hover,
+.man-woman__link:focus{
+    background-color: #b39580;
+}
+
+.new .container{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.title{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: #d8b69e;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+}
+
+.arrow_btn{
+    width: 18px;
+    height: auto;
+    display: block;
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: #b99a84;
+}
+
+.card{
+    border: #D7B399 solid 1px;
+    padding: 22px 25px 25px;
+    text-align: center;
+}
+
+.card__title{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.card__price{
+    font-size: 18px;
+    font-weight: 800;
+    color: #D7B399;
+}
+
+.catalog{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.header{
+    min-height: 800px;
+    background-color: #F9F6F1;
+    align-content: space-between;
+}
+
+.section__header-menu{
+    min-height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.mainmenu__list{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: medium;
+    gap: 19px;
+}
+
+.basket__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 19px;
+    padding-left: 100px;
+    padding: 55px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.card {
+    position: relative;
+}
+
+.card .bi-heart-fill{
+    fill:rgb(146, 121, 192);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.slider__item{
+    min-height: 564px;
+    background: url(../img/first-screen__image.png) no-repeat right center;
+}
+
+.slider_item-text{
+    padding-top: 160px;
+}
+
+.slider_text {
+    font-size: 30px;
+}
+
+.slider_big-text {
+    padding-top: 36px;
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.button {
+    margin-top: 54px;
+    display: block;
+    width: 240px;
+    padding: 18px 0;
+    text-align: center;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+.slider_item-price {
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider_price-old {
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+
+.slider_price-new {
+    font-size: 42px;
+    color: #d84033;
+}
+
+.button_txt{
+    font-size: 16px;
+}
+
+.sale .container{
+    text-align: center;
+}
+
+.dress{
+    margin: 0 auto;
+}
+
+.dress__wrapper {
+    flex-wrap: wrap;
+}
+
+.dress__item {
+    position: relative;
+  width: 250px;
+  height: 250px;
+  text-align: right;
+}
+
+
+.dress__item-grey {
+    background-color: #f4f4f4;
+}
+
+.dress__item-cream {
+    background-color: #f9f6f1;
+}
+
+
+.subscribe {
+    background: #212121;
+    color: white;
+}
+
+.subscribe .container {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.subscribe__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.subscribe__tittle {
+    font-size: 30px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.subscribe__form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.subscribe__input {
+    background: #f5f2ec;
+    border: none;
+    padding: 14px 18px;
+    width: 260px;
+}
+
+.subscribe__btn {
+    background: #d8b69c;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.sale .container{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
